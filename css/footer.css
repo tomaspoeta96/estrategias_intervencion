@@ -1,0 +1,62 @@
+footer {
+	position: relative;
+	border-top: solid black 1px;
+	margin: auto;
+	margin-top: 100px;
+	height: 120px;
+	width: 92%;
+}
+
+.footer {
+	height: 100%;
+}
+
+footer img {
+	width: 50px;
+}
+
+footer img:nth-child(2){
+	margin-left: 25px;
+}
+
+.footer-rulo {
+	width: 170px;
+	background-color: white;
+	position: absolute;
+	right: 10%;
+	top: -7px;
+	padding: 0 10px;
+}
+
+@media (min-width: 680px) and (max-width: 1004px) {
+	.footer-container{
+		top: 20px;
+		display: inline;
+	}
+	footer div p {
+		padding-top: 40px;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 655px) {
+	.footer-container{
+		top: 20px;
+		display: inline;
+	}	
+	footer div p {
+		padding-top: 40px;
+	}
+}
+
+@media (min-width: 656px) and (max-width: 864px) {
+	.footer-container{
+		top: 20px;
+		display: inline;
+	}	
+	footer div p {
+		padding-top: 40px;
+	}	
+}
+
+

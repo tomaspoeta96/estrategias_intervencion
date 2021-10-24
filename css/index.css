@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Muli;
+    src: url(fonts/Muli-Regular.ttf);
+}
+@font-face {
+    font-family: Muli;
+    src: url(fonts/Muli-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Muli;
+    src: url(fonts/Muli-Light.ttf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: Muli;
+    src: url(fonts/Muli-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Playfair;
+    src: url(fonts/PlayfairDisplay-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Playfair;
+    src: url(fonts/PlayfairDisplay-Italic.ttf);
+    font-style: italic;
+}
+
+#index-body {
+    height: 100%;
+    
+}
+.index {
+	 -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.main-menu { display: none; }
+
+.navigation {
+	z-index: 1;
+}
+
+#index-nav {
+	z-index: 1;
+	width: 100%;
+	position: absolute;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.4+53,0.1+85,0+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.4) 53%, rgba(0,0,0,0.1) 85%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.4) 53%,rgba(0,0,0,0.1) 85%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.4) 53%,rgba(0,0,0,0.1) 85%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	transition: background 0.3s;
+}
+#container {
+	height: 100vh;
+	width: 100vw;
+    max-width: 100%;
+    position: relative;
+}
+
+#navbarDropdown, #navbarDropdown:active {
+	color: black;
+	text-align: center;
+}
+
+#index-nav #navbarDropdown, #navbarDropdown:active {
+	color: white;
+	text-align: center;
+}
+
+.main-nav-item, #navbarDropdown, #navbarDropdown:active {
+	color: black;
+	font-size: 26px;
+	padding: 0 20px;
+	white-space: nowrap;
+	font-family: Muli;
+	font-weight: bold;
+	-webkit-transition: color .25s; /* Safari */
+    transition: width color .25s;
+}
+
+.main-nav-item:hover, #navbarDropdown:hover, #navbarDropdown:active:hover {
+	color: #545454;
+	text-decoration: none;
+}
+
+#index-nav .main-nav-item, #index-nav #navbarDropdown, #index-nav #navbarDropdown:active {
+	color: white;
+	-webkit-transition: color .25s; /* Safari */
+    transition: width color .25s;
+}
+
+#index-nav .main-nav-item:hover, #index-nav #navbarDropdown:hover, #index-nav #navbarDropdown:active:hover {
+	color: #dbdbdb;
+	text-decoration: none;
+}
+
+.separator {
+	border-right: solid black 1px;
+}
+
+#index-nav .separator{
+	border-right: solid white 1px;
+}
+
+
+.main-nav{
+	padding: 0 2%;
+}
+
+#logo {
+	 margin: 4% 0 0 10%; 
+	 min-width : 300px;
+	 width: 400px;
+	 color: white;
+}
+.burger-icon { 
+	background-color: white;
+	margin-right: 10px;
+}
+
+.welcome {color: white}
+
+
+.dropdown-menu {
+	background: rgb(199,199,199);
+	background: linear-gradient(0deg, rgba(199,199,199,0.9) 27%, rgba(255,255,255,0.9) 100%);
+	border: none;
+	border-radius: 0;
+	position: relative;
+	width: 100%;
+}
+
+.dropdown-item {
+	font-family: Muli;
+	font-weight: bold;
+	line-height: 20px;
+	white-space: pre-wrap;
+}
+
+.dropdown-item:focus {
+	background-color: white;
+}
+
+
+#navbarDropdown.currentEmp:link {
+	color: rgb(73,106,177);
+}
+
+.main-nav-item.current:link, .main-nav-item.current:visited, #navbarDropdown.current:link, #navbarDropdown.current:visited {
+	color: gray;
+}
+
+
+
+
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.welcome { font-size: 24px; } 
+	#logo {min-width : 200px;}
+}
+
+
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1399px) {
+	.welcome { font-size: 21px; } 
+	#logo {min-width : 200px;}
+}
+
+
+
+@media screen and (max-width: 1540px) {
+	.main-nav-item, #navbarDropdown, #navbarDropdown:active { font-size: 20px;}
+}
+
+
+@media screen and (max-width: 1199px) {
+
+	.dropdown-menu {
+		background: initial;
+		background-color: white;
+		text-align: center;
+	}
+
+	#index-body .dropdown-menu {
+		background: initial;
+		background-color: black;
+	}
+
+	#index-body .dropdown-item {
+		color: white;
+	}
+
+	#index-body .dropdown-item:hover {
+		color: black;
+	}
+	#index-nav, #index-nav .main-nav {
+		background-color: black;
+	}
+	#index-nav .main-nav {
+		width: 100%;
+	}
+	#index-nav .separator, .separator { border: none; }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+	.welcome { font-size: 26px; margin-top: 30px;}
+	#logo {
+		width: 100%;
+		min-width: 0%;
+	} 
+	#logo-container {
+		width: 70%; 
+		margin: 0;
+	} 
+}
+
+@media screen and (min-width: 1200px) {
+	#navbarDropdown::after, #navbarDropdown:active::after {
+    	display:none;
+	}
+	.dropdown:hover>.dropdown-menu {
+		display: block;
+	}	
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1400px) {
+	.dropdown:hover>.dropdown-menu {
+		display: block;
+	}
+	#logo{
+		margin-left: 15%;
+	}
+}

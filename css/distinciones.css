@@ -1,0 +1,106 @@
+.distinciones{
+	color: black;
+	padding: 0 4%;
+}
+
+.distinciones-title {
+	margin-top: 90px;
+	display: inline-block;
+	font-family: Playfair;
+	font-size: 70px;
+	text-transform: uppercase;
+	color: rgb(136,16,1);
+	border-bottom: 1px solid rgb(136,16,1);
+}
+
+.distinciones-subtitle {
+	font-size: 44px;
+	font-family: Playfair;
+	color: black;
+}
+
+.distinciones .distinciones-p:first-of-type {
+	margin-top: 50px;
+}
+
+.distinciones-p {
+	font-family: Muli;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+
+.distinciones-list {
+	margin-top: 40px;
+}
+
+.distinciones-list-item {
+	border-top: 2px solid rgb(136,16,1);
+	padding-top: 20px;
+	display: flex;
+	align-items: baseline;
+}
+
+.distinciones-list-item-year {
+	font-family: Playfair;
+	font-size: 20px;
+	padding: 0 12px;
+	background-color: white;
+	right: 0;
+	height: 20px;
+	margin-top: -38px;
+}
+
+
+.distinciones-list-item-position {
+	font-family: Playfair;
+	color: rgb(136,16,1);
+	font-size: 20px;
+
+}
+
+.distinciones-list-item-description {
+	font-family: Muli;
+	font-weight: bold;
+	color: rgb(136,16,1);
+	font-size: 18px;
+}
+
+.first-number::first-letter {
+	font-size: 28px;
+}
+
+.article-architect-data {
+	color: rgb(136,16,1);
+}
+.distinciones-col-img{
+	display: flex;
+	align-items: flex-end;
+}
+
+
+@media screen and (min-width: 1520px) {
+	.distinciones .distinciones-p:first-of-type {
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.distinciones-title {
+		font-size: 50px;
+	}
+
+	.distinciones-subtitle {
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.distinciones-title {
+		font-size: 40px;
+	}
+
+	.distinciones-subtitle {
+		font-size: 30px;
+	}
+}

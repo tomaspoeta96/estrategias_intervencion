@@ -1,0 +1,65 @@
+.architecture{
+	color: black;
+	padding: 0 4%;
+}
+
+.architecture-title {
+	margin-top: 90px;
+	display: inline-block;
+	font-family: Playfair;
+	font-size: 70px;
+	text-transform: uppercase;
+	color: rgb(136,16,1);
+	border-bottom: 1px solid rgb(136,16,1);
+}
+
+.architecture-subtitle {
+	font-size: 44px;
+	font-family: Playfair;
+	color: rgb(136,16,1);
+}
+
+.architecture .architecture-p:first-of-type {
+	margin-top: 50px;
+}
+
+.architecture-p {
+	font-family: Muli;
+	font-size: 24px;
+	line-height: 26px;
+}
+
+.article-architect-data {
+	color: rgb(136,16,1);
+}
+.architecture-col-img{
+	display: flex;
+	align-items: flex-end;
+}
+
+
+@media screen and (min-width: 1520px) {
+	.architecture .architecture-p:first-of-type {
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.architecture-title {
+		font-size: 50px;
+	}
+
+	.architecture-subtitle {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.architecture-title {
+		font-size: 40px;
+	}
+
+	.architecture-subtitle {
+		font-size: 38px;
+	}
+}
